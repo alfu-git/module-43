@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Headphones",
+      "price": 2599,
+      "category": "Electronics",
+      "brand": "SoundMax",
+      "stock": 25,
+      "rating": 4.5,
+      "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+      "image": "https://example.com/images/headphones.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch Series 7",
+      "price": 5999,
+      "category": "Wearables",
+      "brand": "TechTime",
+      "stock": 15,
+      "rating": 4.3,
+      "description": "Stylish smartwatch with health tracking, notifications, and water resistance.",
+      "image": "https://example.com/images/smartwatch.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Gaming Mouse RGB",
+      "price": 1299,
+      "category": "Accessories",
+      "brand": "GamePro",
+      "stock": 40,
+      "rating": 4.6,
+      "description": "Ergonomic gaming mouse with customizable RGB lighting and high DPI sensor.",
+      "image": "https://example.com/images/mouse.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Laptop Backpack",
+      "price": 1899,
+      "category": "Bags",
+      "brand": "CarryPlus",
+      "stock": 30,
+      "rating": 4.2,
+      "description": "Durable and waterproof backpack with multiple compartments for laptop and accessories.",
+      "image": "https://example.com/images/backpack.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Portable Power Bank 20000mAh",
+      "price": 2199,
+      "category": "Electronics",
+      "brand": "ChargeUp",
+      "stock": 20,
+      "rating": 4.4,
+      "description": "Fast-charging power bank with large capacity and multiple USB ports.",
+      "image": "https://example.com/images/powerbank.jpg"
+    }
+  ]
+}
