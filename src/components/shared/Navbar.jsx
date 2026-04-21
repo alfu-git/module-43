@@ -34,6 +34,15 @@ const Navbar = () => {
           Products
         </Link>
       </li>
+
+      <li>
+        <Link
+          href="/books"
+          className={`${pathname === "/books" ? "border-b-2 border-red-600" : ""}`}
+        >
+          Books
+        </Link>
+      </li>
     </>
   );
 
