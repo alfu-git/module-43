@@ -1,7 +1,8 @@
+import Link from "next/link";
 import React from "react";
 
 const BookCard = ({ book }) => {
-  const { title, author, description } = book;
+  const { id, title, author, description } = book;
 
   return (
     <div className="card bg-base-100 card-md shadow-sm">
@@ -13,6 +14,12 @@ const BookCard = ({ book }) => {
         </span>
 
         <p>{description}</p>
+
+        <div className="justify-end card-actions">
+          <Link href={`/books/${id}`} className="btn btn-primary">
+            Show Details
+          </Link>
+        </div>
       </div>
     </div>
   );
