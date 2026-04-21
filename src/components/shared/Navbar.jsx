@@ -1,14 +1,38 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   const navLinks = (
     <>
       <li>
-        <Link href="/">Home</Link>
+        <Link
+          href="/"
+          className={`${pathname === "/" ? "border-b-2 border-red-600" : ""}`}
+        >
+          Home
+        </Link>
       </li>
+
       <li>
-        <Link href="/posts">Posts</Link>
+        <Link
+          href="/posts"
+          className={`${pathname === "/posts" ? "border-b-2 border-red-600" : ""}`}
+        >
+          Posts
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          href="/products"
+          className={`${pathname === "/products" ? "border-b-2 border-red-600" : ""}`}
+        >
+          Products
+        </Link>
       </li>
     </>
   );
@@ -40,7 +64,7 @@ const Navbar = () => {
                   />{" "}
                 </svg>
               </div>
-              
+
               <ul
                 tabIndex="-1"
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
@@ -49,7 +73,9 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <Link href="/" className="btn btn-ghost text-xl">daisyUI</Link>
+            <Link href="/" className="btn btn-ghost text-xl">
+              daisyUI
+            </Link>
           </div>
 
           <div className="navbar-center hidden lg:flex">

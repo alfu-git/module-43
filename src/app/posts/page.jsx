@@ -17,7 +17,7 @@ const getPosts = async () => {
   }
 
   return res.json();
-}
+};
 
 const PostsPage = async () => {
   // const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -25,7 +25,22 @@ const PostsPage = async () => {
 
   const posts = await getPosts();
 
-  return <div>posts are coming: {posts.length}</div>;
+  return (
+    <section className="my-10">
+      <div>
+        <h2 className="mb-7 text-4xl font-medium text-center">All Posts</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {posts.map((post) => (
+            <div key={post.id} className="p-4 bg-[#212121] rounded-xl">
+              <h4 className="mb-3 text-xl font-bold">{post.title}</h4>
+              <p className="text-lg">{post.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default PostsPage;
